@@ -11,6 +11,6 @@ class UserController extends Controller
     public function show($id , Request $request)
     {
         $users = DB::table('users')->select('name')->get();
-        dd($users);
+        dd($user);
     }
 }
